@@ -1,0 +1,61 @@
+<!--
+    Noise-generator Synth
+
+    Purpose:
+    This web application creates a noise-generator synthesizer using the Tone.js library. 
+    The synthesizer is designed to generate random melodies in four different pitch ranges (low, mid-low, mid-high, and high) in response to MIDI keyboard input. 
+    It incorporates various audio effects such as FeedbackDelay, Freeverb, Distortion, and a Low-Pass Filter to shape the sound.
+
+    How to Run:
+    1. Open this HTML file in a web browser.
+    2. Make sure to start the "AudioContext" by clicking the "Start AudioContext" button.
+    3. Use a MIDI keyboard to play notes (C3, D3, E3, F3) to activate loops in different pitch ranges.
+    4. Adjust the synth's volume and cutoff frequency using the respective sliders.
+    5. Pause the synth with the "Stop" button.
+    6. Open the developer tools to check if WebMidi and the AudioContext are enabled.
+
+    Developed by Diego Peralta
+
+    Note: Ensure that the required libraries (Tone.js and WebMidi) are loaded from the specified CDN links.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise-generator Synth</title>
+    <script src="https://cdn.jsdelivr.net/npm/tone@14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@2"></script>
+    <style>
+        h2 {
+            font-size: 1em; 
+            margin-bottom: 0.5em; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Noise-generator Synth</h1>
+    <h2>Developed by Diego Peralta</h2>
+
+    <p>
+        Instructions:
+        <ul>
+            <li>Make sure you start "AudioContext"</li>
+            <li>The synth has four ranges: low, mid-low, mid-high, and high. Press C3, D3, E3, and F3 respectively on your MIDI keyboard to activate the loops.</li>
+            <li>Pause the synth with the "Stop" button.</li>
+            <li>It is highly encouraged to open the developer tools to check if WebMidi and the AudioContext are enabled.</li>
+            <li>This synth is very loud, make sure to adjust your speakers volume at a soft level</li>
+        </ul>
+    </p>
+
+    <button id="startAudioContextButton">Start AudioContext</button>
+    <button id="stopButton">Stop</button>
+    <label for="volumeInput">Volume:</label>
+    <input type="range" id="volumeInput" min="-60" max="0" value="-10" step="0.1">
+    <label for="cutoffInput">Cutoff Frequency:</label>
+    <input type="range" id="cutoffInput" min="0" max="20000" value="20000" step="10">
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
