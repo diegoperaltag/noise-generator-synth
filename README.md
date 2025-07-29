@@ -1,4 +1,7 @@
 # Noise-generator Synth (User's Manual)
+
+[Demo Video](https://drive.google.com/file/d/1HQLSPLuX-S6hAK1OmS7YKDxF_gyk47Q0/view?usp=sharing)
+
 ## 1.- Introduction
 Welcome to the Noise-generator Synthesizer user manual! This basic synthesizer will let you play noisy textures that can add another layer of complexity to your music. 
 
@@ -20,7 +23,8 @@ Welcome to the Noise-generator Synthesizer user manual! This basic synthesizer w
 
 4.- Play the notes **C3**, **D3**, **E3** and **F3** on your MIDI keyboard to trigger different musical loops.
 
-## 4.- Conclusion
+## 4.- Make Noise!
 Congratulations! You are now ready to explore and enjoy the Noise-generator Synthesizer. Feel free to experiment with different settings, play with MIDI input, and have fun. Enjoy the noise!
+
 
 
